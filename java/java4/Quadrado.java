@@ -1,10 +1,5 @@
 class Quadrado extends Retangulo {
-    public Quadrado(double lado) {
-        super(lado, lado);
-    }
-
+    public Quadrado(double lado) { super(lado, lado); super.nome = "Quadrado"; }
     @Override
-    public double calcularArea() {
-        return Math.pow(super.largura, 2);
-    }
+    public double calcularArea() { return super.calcularArea(); }
 }

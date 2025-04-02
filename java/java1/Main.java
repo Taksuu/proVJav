@@ -1,9 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Produto produto = new Produto("Camisa", 100.0);
-        produto.exibirDetalhes();
+        Produto produto = new Produto("Camiseta", 49.90);
+        ProdutoComDesconto produtoComDesconto = new ProdutoComDesconto("Calça Jeans", 120.00, 15);
 
-        ProdutoDesconto produtoDesconto = new ProdutoDesconto("Sapato", 200.0, 20.0);
-        produtoDesconto.exibirDetalhesDesconto();
+        produto.exibirDetalhes();
+        System.out.println();
+        produtoComDesconto.exibirDetalhesComDesconto();
     }
 }

@@ -1,15 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        Circulo circulo = new Circulo(5.0);
+        Forma circulo = new Circulo(5.0);
+        Forma retangulo = new Retangulo(4.0, 6.0);
+        Forma quadrado = new Quadrado(4.0);
+
         circulo.exibirNome();
-        System.out.println("Área: " + circulo.calcularArea());
+        System.out.println("Área: " + circulo.calcularArea() + "\n");
 
-        Retangulo retangulo = new Retangulo(4.0, 6.0);
         retangulo.exibirNome();
-        System.out.println("Área: " + retangulo.calcularArea());
+        System.out.println("Área: " + retangulo.calcularArea() + "\n");
 
-        Quadrado quadrado = new Quadrado(4.0);
         quadrado.exibirNome();
-        System.out.println("Área: " + quadrado.calcularArea());
+        System.out.println("Área: " + quadrado.calcularArea() + "\n");
     }
 }
